@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="carrito_compras" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=HUGO;Initial Catalog=carrito_compras;Integrated Security=True" SettingsObjectName="CapaDatos.Properties.Settings" SettingsPropertyName="carrito_comprasConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.carrito" Member="carrito">
+    <Type Name="carrito">
+      <Column Name="id_carrito" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_usu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_pro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="producto_carrito" Member="producto" ThisKey="id_pro" OtherKey="id_pro" Type="producto" IsForeignKey="true" />
+      <Association Name="usuario_registro_carrito" Member="usuario_registro" ThisKey="id_usu" OtherKey="id_usu" Type="usuario_registro" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.producto" Member="producto">
+    <Type Name="producto">
+      <Column Name="id_pro" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_pro" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="descrip_pro" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="precio_pro" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Association Name="producto_carrito" Member="carrito" ThisKey="id_pro" OtherKey="id_pro" Type="carrito" />
+    </Type>
+  </Table>
+  <Table Name="dbo.usuario_registro" Member="usuario_registro">
+    <Type Name="usuario_registro">
+      <Column Name="id_usu" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_usu" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="correo_usu" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="pass_usu" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="domicilio_usu" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="num_usu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="usuario_registro_carrito" Member="carrito" ThisKey="id_usu" OtherKey="id_usu" Type="carrito" />
+    </Type>
+  </Table>
+</Database>
