@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="actividad2_FalconiHugo.Inicio" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="actividad2_FalconiHugo.Mantenimiento.Index" %>
 
 <!DOCTYPE html>
 
@@ -10,10 +10,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <center>
-            <h1>BIENVENIDO al sistema</h1>
-                <h1>carrito</h1>
-            </center>
         </div>
     </form>
 </body>

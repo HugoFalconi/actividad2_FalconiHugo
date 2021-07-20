@@ -78,9 +78,99 @@
     <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
     <Content Include="images\bg-01.jpg" />
     <Content Include="images\icons\favicon.ico" />
-    <Content Include="Inicio.aspx" />
     <Content Include="js\main.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Mantenimiento\about.aspx" />
+    <Content Include="Mantenimiento\computer.aspx" />
+    <Content Include="Mantenimiento\contact.aspx" />
+    <Content Include="Mantenimiento\css\animate.min.css" />
+    <Content Include="Mantenimiento\css\bootstrap-grid.css" />
+    <Content Include="Mantenimiento\css\bootstrap-grid.min.css" />
+    <Content Include="Mantenimiento\css\bootstrap-reboot.css" />
+    <Content Include="Mantenimiento\css\bootstrap-reboot.min.css" />
+    <Content Include="Mantenimiento\css\bootstrap.css" />
+    <Content Include="Mantenimiento\css\bootstrap.min.css" />
+    <Content Include="Mantenimiento\css\default-skin.css" />
+    <Content Include="Mantenimiento\css\font-awesome.min.css" />
+    <Content Include="Mantenimiento\css\icomoon.css" />
+    <Content Include="Mantenimiento\css\jquery-ui.css" />
+    <Content Include="Mantenimiento\css\jquery.fancybox.min.css" />
+    <Content Include="Mantenimiento\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Mantenimiento\css\meanmenu.css" />
+    <Content Include="Mantenimiento\css\nice-select.css" />
+    <Content Include="Mantenimiento\css\normalize.css" />
+    <Content Include="Mantenimiento\css\owl.carousel.min.css" />
+    <Content Include="Mantenimiento\css\responsive.css" />
+    <Content Include="Mantenimiento\css\slick.css" />
+    <Content Include="Mantenimiento\css\style.css" />
+    <Content Include="Mantenimiento\fonts\fontawesome-webfont.svg" />
+    <Content Include="Mantenimiento\images\about.jpg" />
+    <Content Include="Mantenimiento\images\banner.jpg" />
+    <Content Include="Mantenimiento\images\bg.jpg" />
+    <Content Include="Mantenimiento\images\contact_g.jpg" />
+    <Content Include="Mantenimiento\images\cos.png" />
+    <Content Include="Mantenimiento\images\cross.png" />
+    <Content Include="Mantenimiento\images\footer.jpg" />
+    <Content Include="Mantenimiento\images\leptop.jpg" />
+    <Content Include="Mantenimiento\images\loading.gif" />
+    <Content Include="Mantenimiento\images\logo.png" />
+    <Content Include="Mantenimiento\images\logo1.png" />
+    <Content Include="Mantenimiento\images\menu_icon.png" />
+    <Content Include="Mantenimiento\images\pc.png" />
+    <Content Include="Mantenimiento\images\pct.png" />
+    <Content Include="Mantenimiento\images\product1.png" />
+    <Content Include="Mantenimiento\images\product2.png" />
+    <Content Include="Mantenimiento\images\product3.png" />
+    <Content Include="Mantenimiento\images\product4.png" />
+    <Content Include="Mantenimiento\images\product5.png" />
+    <Content Include="Mantenimiento\images\product6.png" />
+    <Content Include="Mantenimiento\images\product7.png" />
+    <Content Include="Mantenimiento\images\product8.png" />
+    <Content Include="Mantenimiento\images\product9.png" />
+    <Content Include="Mantenimiento\images\thr.png" />
+    <Content Include="Mantenimiento\images\thr1.png" />
+    <Content Include="Mantenimiento\images\thr2.png" />
+    <Content Include="Mantenimiento\Index.aspx" />
+    <Content Include="Mantenimiento\js\bootstrap.bundle.js" />
+    <Content Include="Mantenimiento\js\bootstrap.bundle.min.js" />
+    <Content Include="Mantenimiento\js\bootstrap.js" />
+    <Content Include="Mantenimiento\js\bootstrap.min.js" />
+    <Content Include="Mantenimiento\js\custom.js" />
+    <Content Include="Mantenimiento\js\jquery-3.0.0.min.js" />
+    <Content Include="Mantenimiento\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Mantenimiento\js\jquery.min.js" />
+    <Content Include="Mantenimiento\js\jquery.validate.js" />
+    <Content Include="Mantenimiento\js\modernizer.js" />
+    <Content Include="Mantenimiento\js\plugin.js" />
+    <Content Include="Mantenimiento\js\popper.min.js" />
+    <Content Include="Mantenimiento\js\revolution\assets\coloredbg.png" />
+    <Content Include="Mantenimiento\js\revolution\assets\gridtile.png" />
+    <Content Include="Mantenimiento\js\revolution\assets\gridtile_3x3.png" />
+    <Content Include="Mantenimiento\js\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="Mantenimiento\js\revolution\assets\gridtile_white.png" />
+    <Content Include="Mantenimiento\js\revolution\assets\loader.gif" />
+    <Content Include="Mantenimiento\js\revolution\css\closedhand.html" />
+    <Content Include="Mantenimiento\js\revolution\css\layers.css" />
+    <Content Include="Mantenimiento\js\revolution\css\navigation.css" />
+    <Content Include="Mantenimiento\js\revolution\css\openhand.html" />
+    <Content Include="Mantenimiento\js\revolution\css\settings.css" />
+    <Content Include="Mantenimiento\js\revolution\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="Mantenimiento\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.svg" />
+    <Content Include="Mantenimiento\js\revolution\fonts\revicons\revicons90c6.svg" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Mantenimiento\js\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Mantenimiento\js\slider-setting.js" />
+    <Content Include="Mantenimiento\laptop.aspx" />
+    <Content Include="Mantenimiento\product.aspx" />
     <Content Include="vendor\animate\animate.css" />
     <Content Include="vendor\animsition\css\animsition.css" />
     <Content Include="vendor\animsition\css\animsition.min.css" />
@@ -114,19 +204,54 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inicio.aspx.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\computer.aspx.cs">
+      <DependentUpon>computer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\computer.aspx.designer.cs">
+      <DependentUpon>computer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\laptop.aspx.cs">
+      <DependentUpon>laptop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\laptop.aspx.designer.cs">
+      <DependentUpon>laptop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\product.aspx.cs">
+      <DependentUpon>product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\product.aspx.designer.cs">
+      <DependentUpon>product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -186,6 +311,52 @@
     <Content Include="fonts\poppins\Poppins-SemiBoldItalic.ttf" />
     <Content Include="fonts\poppins\Poppins-Thin.ttf" />
     <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Mantenimiento\css\.DS_Store" />
+    <Content Include="Mantenimiento\css\bootstrap-grid.css.map" />
+    <Content Include="Mantenimiento\css\bootstrap-grid.min.css.map" />
+    <Content Include="Mantenimiento\css\bootstrap-reboot.css.map" />
+    <Content Include="Mantenimiento\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Mantenimiento\css\bootstrap.css.map" />
+    <Content Include="Mantenimiento\css\bootstrap.min.css.map" />
+    <Content Include="Mantenimiento\fonts\fontawesome-webfont.eot" />
+    <Content Include="Mantenimiento\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Mantenimiento\fonts\fontawesome-webfont.woff" />
+    <Content Include="Mantenimiento\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Mantenimiento\fonts\FontAwesome.otf" />
+    <Content Include="Mantenimiento\fonts\IcoMoon-Free.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-Black.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-BlackItalic.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-Bold.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-BoldItalic.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-ExtraBold.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-ExtraLight.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-Italic.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-Light.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-LightItalic.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-Medium.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-MediumItalic.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-Regular.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-SemiBold.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-Thin.ttf" />
+    <Content Include="Mantenimiento\fonts\Poppins-ThinItalic.ttf" />
+    <Content Include="Mantenimiento\images\.DS_Store" />
+    <Content Include="Mantenimiento\js\.DS_Store" />
+    <Content Include="Mantenimiento\js\bootstrap.bundle.js.map" />
+    <Content Include="Mantenimiento\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Mantenimiento\js\bootstrap.js.map" />
+    <Content Include="Mantenimiento\js\bootstrap.min.js.map" />
+    <Content Include="Mantenimiento\js\revolution\.DS_Store" />
+    <Content Include="Mantenimiento\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.eot" />
+    <Content Include="Mantenimiento\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.ttf" />
+    <Content Include="Mantenimiento\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.woff" />
+    <Content Include="Mantenimiento\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroked41d.eot" />
+    <Content Include="Mantenimiento\js\revolution\fonts\revicons\revicons90c6.eot" />
+    <Content Include="Mantenimiento\js\revolution\fonts\revicons\revicons90c6.ttf" />
+    <Content Include="Mantenimiento\js\revolution\fonts\revicons\revicons90c6.woff" />
+    <Content Include="Mantenimiento\js\revolution\js\.DS_Store" />
     <None Include="packages.config" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
@@ -211,7 +382,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mantenimiento\" />
+    <Folder Include="Mantenimiento\icon\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
