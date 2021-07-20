@@ -42,7 +42,7 @@ namespace actividad2_FalconiHugo
                            
                             if (usulog !=null )
                             {
-                                Response.Redirect("~/Inicio.aspx");
+                                Response.Redirect("~/Mantenimiento/Index.aspx");
                             }
                         }
                         else
