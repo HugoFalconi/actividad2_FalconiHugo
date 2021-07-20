@@ -64,22 +64,16 @@
                                  <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="computer.html">Computadoras</a>
+                                 <a class="nav-link" href="computer.html">Computadoras y Laptops</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="laptop.html">Laptop</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="product.html">Producto</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Su Carrito</a>
+                                 <a class="nav-link" href="product.html">Su Carrito</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Login</a>
+                                 <a class="nav-link" href="#">Cerrar Sesion</a>
                               </li>
                            </ul>
                         </div>
@@ -108,9 +102,9 @@
                         <div class="row">
                            <div class="col-md-6">
                               <div class="text-bg">
-                                 <span>Computer And Laptop</span>
-                                 <h1>Accessories</h1>
-                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or </p>
+                                 <span>Computadoras y Laptops</span>
+                                 <h1>Accessorios</h1>
+                                 <p>Computadoras, laptops y accesorios</p>
                                  
                               </div>
                            </div>
@@ -131,8 +125,7 @@
                               <div class="text-bg">
                                  <span>Computer And Laptop</span>
                                  <h1>Accessories</h1>
-                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or </p>
-                                 <a href="#">Buy Now </a> <a href="contact.html">Contact </a>
+                                 <p>Computadoras, laptops y accesorios</p>
                               </div>
                            </div>
                            <div class="col-md-6">
@@ -150,10 +143,9 @@
                         <div class="row">
                            <div class="col-md-6">
                               <div class="text-bg">
-                                 <span>Computer And Laptop</span>
-                                 <h1>Accessories</h1>
-                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or </p>
-                                 <a href="#">Buy Now </a> <a href="contact.html">Contact </a>
+                                 <span>Computadoras y Laptops</span>
+                                 <h1>Accessorios</h1>
+                                 <p>Computadoras, laptops y accesorios</p>
                               </div>
                            </div>
                            <div class="col-md-6">
@@ -171,10 +163,9 @@
                         <div class="row">
                            <div class="col-md-6">
                               <div class="text-bg">
-                                 <span>Computer And Laptop</span>
-                                 <h1>Accessories</h1>
-                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or </p>
-                                 <a href="#">Buy Now </a> <a href="contact.html">Contact </a>
+                                 <span>Computadoras y Laptop</span>
+                                 <h1>Accessorios</h1>
+                                 <p>Computadoras, laptops y accesorios </p>
                               </div>
                            </div>
                            <div class="col-md-6">
@@ -192,10 +183,9 @@
                         <div class="row">
                            <div class="col-md-6">
                               <div class="text-bg">
-                                 <span>Computer And Laptop</span>
-                                 <h1>Accessories</h1>
-                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or </p>
-                                 <a href="#">Buy Now </a> <a href="contact.html">Contact </a>
+                                 <span>Computadoras y Laptops</span>
+                                 <h1>Accessorios</h1>
+                                 <p>Computadoras, laptops y accesorios </p>
                               </div>
                            </div>
                            <div class="col-md-6">
@@ -232,14 +222,14 @@
                   <div class="box_text">
                      <i><img src="images/thr1.png" alt="#"/></i>
                      <h3>Laptop</h3>
-                     <p>Hay muchas variaciones de computadoras que pueden encontrar en nuestra pagina.</p>
+                     <p>Hay muchas variaciones de Laptops que pueden encontrar en nuestra pagina.</p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box_text">
                      <i><img src="images/thr2.png" alt="#"/></i>
                      <h3>Tablet</h3>
-                     <p>Hay muchas variaciones de computadoras que pueden encontrar en nuestra pagina. </p>
+                     <p>Hay muchas variaciones de Tablets que pueden encontrar en nuestra pagina. </p>
                   </div>
                </div>
             </div>
@@ -320,40 +310,6 @@
             </div>
          </div>
       </div>
-      <div class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Contact Now</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
-                        </div>
-                        <div class="col-md-12">
-                           <button class="send_btn">Send</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
       <!-- end contact -->
       <!--  footer -->
       <footer>
@@ -370,23 +326,16 @@
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>About Us</h3>
+                     <h3>Acerca de Nosotros</h3>
                      <ul class="about_us">
-                        <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                        <li>Hugo Falconi<br> Kevin Quimbiulco<br></li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>Contact Us</h3>
+                     <h3>Contactenos</h3>
                      <ul class="conta">
-                        <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                        <li>hugo-falcon2010@hotmail.com<br>kevinrap80@hotmail.com<br></li>
                      </ul>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <form class="bottom_form">
-                        <h3>Newsletter</h3>
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
-                     </form>
                   </div>
                </div>
             </div>

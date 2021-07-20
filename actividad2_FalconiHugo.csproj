@@ -80,9 +80,7 @@
     <Content Include="images\icons\favicon.ico" />
     <Content Include="js\main.js" />
     <Content Include="Login.aspx" />
-    <Content Include="Mantenimiento\about.aspx" />
     <Content Include="Mantenimiento\computer.aspx" />
-    <Content Include="Mantenimiento\contact.aspx" />
     <Content Include="Mantenimiento\css\animate.min.css" />
     <Content Include="Mantenimiento\css\bootstrap-grid.css" />
     <Content Include="Mantenimiento\css\bootstrap-grid.min.css" />
@@ -169,7 +167,6 @@
     <Content Include="Mantenimiento\js\revolution\js\jquery.themepunch.revolution.min.js" />
     <Content Include="Mantenimiento\js\revolution\js\jquery.themepunch.tools.min.js" />
     <Content Include="Mantenimiento\js\slider-setting.js" />
-    <Content Include="Mantenimiento\laptop.aspx" />
     <Content Include="Mantenimiento\product.aspx" />
     <Content Include="Mantenimiento\registro.aspx" />
     <Content Include="vendor\animate\animate.css" />
@@ -212,13 +209,6 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimiento\about.aspx.cs">
-      <DependentUpon>about.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Mantenimiento\about.aspx.designer.cs">
-      <DependentUpon>about.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Mantenimiento\computer.aspx.cs">
       <DependentUpon>computer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -226,26 +216,12 @@
     <Compile Include="Mantenimiento\computer.aspx.designer.cs">
       <DependentUpon>computer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimiento\contact.aspx.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Mantenimiento\contact.aspx.designer.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Mantenimiento\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Mantenimiento\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Mantenimiento\laptop.aspx.cs">
-      <DependentUpon>laptop.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Mantenimiento\laptop.aspx.designer.cs">
-      <DependentUpon>laptop.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mantenimiento\product.aspx.cs">
       <DependentUpon>product.aspx</DependentUpon>
