@@ -36,7 +36,7 @@ namespace actividad2_FalconiHugo
                     {
                         if (existe)
                         {
-                            tbl_usuario usulog = new tbl_usuario();
+                            usuario_registro usulog = new usuario_registro();
                             usulog = CN_Usuario.autentificarxlogin(txt_correo.Text, txt_pass.Text);
 
                            
@@ -96,18 +96,18 @@ namespace actividad2_FalconiHugo
 
         protected void btn_recuperar_Click(object sender, EventArgs e)
         {
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-            smtp.Credentials = new NetworkCredential("hugolindo2013hbk@gmail.com", "deathflash24");
-            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtp.EnableSsl = true;
-            smtp.UseDefaultCredentials = false;
+            //SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            //smtp.Credentials = new NetworkCredential("hugolindo2013hbk@gmail.com", "deathflash24");
+            //smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            //smtp.EnableSsl = true;
+            //smtp.UseDefaultCredentials = false;
 
-            MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("hugolindo2013hbk@gmail.com", "activida2_FalconiHugo");
-            mail.To.Add(new MailAddress(txt_correo.Text));
-            mail.Subject = "Recuperar contraseña";
-            mail.Priority = MailPriority.Normal;
-            mail.Body = "adios1234";
+            //MailMessage mail = new MailMessage();
+            //mail.From = new MailAddress("hugolindo2013hbk@gmail.com", "activida2_FalconiHugo");
+            //mail.To.Add(new MailAddress(txt_correo.Text));
+            //mail.Subject = "Recuperar contraseña";
+            //mail.Priority = MailPriority.Normal;
+            //mail.Body = "adios1234";
         }
     }
 }
