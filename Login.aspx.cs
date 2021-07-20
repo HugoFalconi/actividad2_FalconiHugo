@@ -62,7 +62,7 @@ namespace actividad2_FalconiHugo
                             if (contador == 0)
                             {
                                 btn_ingresar.Visible = false;
-                                lbl_intentos.Text = "Ah alcanzado el limite de intentos..";
+                                lbl_intentos.Text = "Ah alcanzado el limite de intentos.. hola ";
                                 lnk_olvido.Visible = true;
                                 btn_ingresar.Visible = false;
                             }
