@@ -171,6 +171,7 @@
     <Content Include="Mantenimiento\js\slider-setting.js" />
     <Content Include="Mantenimiento\laptop.aspx" />
     <Content Include="Mantenimiento\product.aspx" />
+    <Content Include="Mantenimiento\registro.aspx" />
     <Content Include="vendor\animate\animate.css" />
     <Content Include="vendor\animsition\css\animsition.css" />
     <Content Include="vendor\animsition\css\animsition.min.css" />
@@ -252,6 +253,13 @@
     </Compile>
     <Compile Include="Mantenimiento\product.aspx.designer.cs">
       <DependentUpon>product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\registro.aspx.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\registro.aspx.designer.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
