@@ -11,7 +11,8 @@
     <form id="form1" runat="server">
         <div>
             <center>
-            <h1>BIENVENIDO</h1>
+            <h1>BIENVENIDO al sistema</h1>
+                <h1>carrito</h1>
             </center>
         </div>
     </form>
