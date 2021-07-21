@@ -36,17 +36,12 @@ namespace actividad2_FalconiHugo.Mantenimiento
             {
                 usuregis = new usuario_registro();
                 usuregis.nombre_usu = txt_nombre.Text;
-                usuregis.correo_usu = txt_correo.Text; /*Convert.ToInt32(txt_cantidad.Text);*/
-                //productoinfo.prov_id = Convert.ToInt32(ddl_provedor.SelectedValue);
+                usuregis.correo_usu = txt_correo.Text; 
                 usuregis.pass_usu = txt_contraregistro.Text;
                 usuregis.domicilio_usu = txt_domiciolio.Text;
                 usuregis.num_usu = Convert.ToInt32(txt_numusu.Text);
                 CN_Usuario.Registrar_usu(usuregis);
-                if (usuregis!=null)
-                {
-                    string js1 = "alert('Usuario registrado corrrectamente')";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "script", js1, true);
-                }
+               
 
 
             }
