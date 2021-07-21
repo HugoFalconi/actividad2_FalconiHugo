@@ -40,6 +40,7 @@
       <!-- end loader -->
       <!-- header -->
       <header>
+          <form runat="server">
          <!-- header inner -->
          <div class="header">
             <div class="container-fluid">
@@ -64,10 +65,12 @@
                                  <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="computer.html">Computadoras y Laptops</a>
+                                 <%--<a class="nav-link" href="computer.html">Computadoras y Laptops</a>--%>
+                                  <asp:LinkButton ID="LinkBulnktton1" class="nav-link" OnClick="LinkBulnktton1_Click"  runat="server">Computadoras y Laptops</asp:LinkButton>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="product.html">Su Carrito</a>
+                                 <%--<a class="nav-link" href="product.html">Su Carrito</a>--%>
+                                   <asp:LinkButton ID="LinkButton2" class="nav-link" OnClick="LinkButton2_Click" runat="server">Su Carrito</asp:LinkButton>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -82,6 +85,7 @@
                </div>
             </div>
          </div>
+              </form>
       </header>
       <!-- end header inner -->
       <!-- end header -->

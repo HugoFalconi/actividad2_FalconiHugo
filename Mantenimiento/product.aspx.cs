@@ -13,5 +13,20 @@ namespace actividad2_FalconiHugo.Mantenimiento
         {
 
         }
+
+        protected void LinkBulnktton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Mantenimiento/Index.aspx");
+        }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Mantenimiento/computer.aspx");
+        }
+
+        protected void LinkButton3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Mantenimiento/product.aspx");
+        }
     }
 }

@@ -40,6 +40,7 @@
       <!-- end loader -->
       <!-- header -->
       <header>
+          <form>
          <!-- header inner -->
          <div class="header">
             <div class="container-fluid">
@@ -61,13 +62,16 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item ">
-                                 <a class="nav-link" href="index.html">Inicio</a>
+                                 <%--<a class="nav-link" href="index.html">Inicio</a>--%>
+                                   <asp:LinkButton ID="LinkBulnktton1" class="nav-link" OnClick="LinkBulnktton1_Click" runat="server">Inicio</asp:LinkButton>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="computer.html">Computadoras y Laptops</a>
+                                 <%--<a class="nav-link" href="computer.html">Computadoras y Laptops</a>--%>
+                                   <asp:LinkButton ID="LinkButton2" class="nav-link" OnClick="LinkButton2_Click" runat="server">Computadoras y Laptops</asp:LinkButton>
                               </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="product.html">Su carrtio</a>
+                                 <%--<a class="nav-link" href="product.html">Su carrtio</a>--%>
+                                   <asp:LinkButton ID="LinkButton3" class="nav-link" OnClick="LinkButton3_Click" runat="server">Su carrtio</asp:LinkButton>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -82,6 +86,7 @@
                </div>
             </div>
          </div>
+              </form>
       </header>
       <!-- end header inner -->
       <!-- end header -->
@@ -91,7 +96,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Nuestros Productos</h2>
+                     <h2>Productos disponibles para la muerte</h2>
                   </div>
                </div>
             </div>
