@@ -5,16 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Registro</title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
         <div class="contact">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Contact Now</h2>
+                     <h2>Nuevo Registro</h2>
                   </div>
                </div>
             </div>
@@ -43,6 +43,6 @@
             </div>
          </div>
       </div>
-    </form>
+    
 </body>
 </html>
