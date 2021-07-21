@@ -40,6 +40,7 @@
       <!-- end loader -->
       <!-- header -->
       <header>
+          <form runat="server">
          <!-- header inner -->
          <div class="header">
             <div class="container-fluid">
@@ -85,6 +86,7 @@
                </div>
             </div>
          </div>
+              </form>
       </header>
       <!-- end header inner -->
       <!-- end header -->

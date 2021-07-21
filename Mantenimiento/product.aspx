@@ -40,7 +40,7 @@
       <!-- end loader -->
       <!-- header -->
       <header>
-          <form>
+          <form runat="server">
          <!-- header inner -->
          <div class="header">
             <div class="container-fluid">
@@ -96,7 +96,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Productos disponibles para la muerte</h2>
+                     <h2>Productos disponibles para la venta</h2>
                   </div>
                </div>
             </div>
