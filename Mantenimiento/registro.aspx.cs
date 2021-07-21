@@ -24,6 +24,7 @@ namespace actividad2_FalconiHugo.Mantenimiento
         protected void btn_registro_Click(object sender, EventArgs e)
         {
             Guardar();
+            Response.Redirect("~/Login.aspx");
         }
 
         private void Guardar()

@@ -77,17 +77,7 @@
 					</div>
 
 					<div class="flex-c-m">
-						<a href="#" class="login100-social-item bg1">
-							<i class="fa fa-facebook"></i>
-						</a>
-
-						<a href="#" class="login100-social-item bg2">
-							<i class="fa fa-twitter"></i>
-						</a>
-
-						<a href="#" class="login100-social-item bg3">
-							<i class="fa fa-google"></i>
-						</a>
+						<asp:LinkButton ID="lnk_registro" class="text-right p-t-8 p-b-31" OnClick="lnk_registro_Click" runat="server">¿No tiene una cuenta creada?</asp:LinkButton>
 					</div>
 						</ContentTemplate>
                         </asp:UpdatePanel>

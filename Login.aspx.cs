@@ -109,5 +109,10 @@ namespace actividad2_FalconiHugo
             //mail.Priority = MailPriority.Normal;
             //mail.Body = "adios1234";
         }
+
+        protected void lnk_registro_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Mantenimiento/registro.aspx");
+        }
     }
 }
