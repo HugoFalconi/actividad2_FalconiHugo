@@ -35,5 +35,18 @@ namespace CapaNegocio
             var nlogin = dc.usuario_registro.Single(usu => usu.nombre_usu.Equals(usu.nombre_usu) && usu.correo_usu.Equals(correo) && usu.pass_usu.Equals(pass));
             return nlogin;
         }
+
+        public static void Registrar_usu(usuario_registro pro)
+        {
+            try
+            {
+                dc.usuario_registro.InsertOnSubmit(pro);
+                dc.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException("Los datos no han sido guardados <br/>" + ex.Message);
+            }
+        }
     }
 }
