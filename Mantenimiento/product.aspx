@@ -61,28 +61,19 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item ">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="computer.html">Computer</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="laptop.html">Laptop</a>
+                                 <a class="nav-link" href="computer.html">Computadoras y Laptops</a>
                               </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="product.html">Products</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="product.html">Su carrtio</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Login</a>
+                                 <a class="nav-link" href="#">Cerrar Sesion</a>
                               </li>
                            </ul>
                         </div>
@@ -100,7 +91,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Our Products</h2>
+                     <h2>Nuestros Productos</h2>
                   </div>
                </div>
             </div>
@@ -123,7 +114,7 @@
                         <div class="col-md-4 margin_bottom1">
                            <div class="product_box">
                               <figure><img src="images/product3.png" alt="#"/></figure>
-                              <h3>Tablet</h3>
+                              <h3>Camaras</h3>
                            </div>
                         </div>
                         <div class="col-md-4 margin_bottom1">
@@ -187,23 +178,16 @@
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>About Us</h3>
+                     <h3>Acerca de Nosotros</h3>
                      <ul class="about_us">
-                        <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                        <li>Hugo Falconi<br> Kevin Quimbiulco<br></li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>Contact Us</h3>
+                     <h3>Contactenos</h3>
                      <ul class="conta">
-                        <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                        <li>hugo-falcon2010@hotmail.com<br>kevinrap80@hotmail.com<br></li>
                      </ul>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <form class="bottom_form">
-                        <h3>Newsletter</h3>
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
-                     </form>
                   </div>
                </div>
             </div>
@@ -229,4 +213,5 @@
       <script src="js/custom.js"></script>
    </body>
 </html>
+
 
