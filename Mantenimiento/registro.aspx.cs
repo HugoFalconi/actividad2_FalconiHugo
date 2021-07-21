@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using CapaDatos;
 using CapaNegocio;
+using System.Drawing;
 
 namespace actividad2_FalconiHugo.Mantenimiento
 {
@@ -24,6 +25,8 @@ namespace actividad2_FalconiHugo.Mantenimiento
         protected void btn_registro_Click(object sender, EventArgs e)
         {
             Guardar();
+            string js1 = "alert('Usuario registrado corrrectamente')";
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", js1, true);
             Response.Redirect("~/Login.aspx");
         }
 
@@ -39,12 +42,12 @@ namespace actividad2_FalconiHugo.Mantenimiento
                 usuregis.domicilio_usu = txt_domiciolio.Text;
                 usuregis.num_usu = Convert.ToInt32(txt_numusu.Text);
                 CN_Usuario.Registrar_usu(usuregis);
-                //lbl_mensaje.Visible = true;
-                //lbl_mensaje.Text = "Datos guardados";
-                //if (lbl_mensaje.Text == "Datos Guardados")
-                //{
-                //    Timer1.Enabled = true;
-                //}
+                if (usuregis!=null)
+                {
+                    string js1 = "alert('Usuario registrado corrrectamente')";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "script", js1, true);
+                }
+
 
             }
             //catch (Exception ex)
@@ -55,6 +58,8 @@ namespace actividad2_FalconiHugo.Mantenimiento
             //}
             catch (Exception)
             {
+                string js1 = "alert('Usuario no registrado')";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", js1, true);
                 throw;
             }
         }
