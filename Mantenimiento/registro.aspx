@@ -45,12 +45,13 @@
                   </div>
                </div>
             </div>
-             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-             <ContentTemplate>
+             
             <div class="row">
                <div class="col-md-10 offset-md-1">
                   <form id="request" runat="server" class="main_form">
+                      <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+             <ContentTemplate>
                      <div class="row">
                         <div class="col-md-12 ">
                           <%-- <input class="contactus" placeholder="Name" type="text" name="Name">--%>
@@ -78,11 +79,12 @@
                             <asp:Button ID="btn_registro" class="send_btn" runat="server" Text="Registrar" OnClick="btn_registro_Click" />
                         </div>
                      </div>
+                 </ContentTemplate>
+           </asp:UpdatePanel>
                   </form>
                </div>
             </div>
-            </ContentTemplate>
-           </asp:UpdatePanel>
+            
          </div>
       </div>
     

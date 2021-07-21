@@ -25,8 +25,7 @@ namespace actividad2_FalconiHugo.Mantenimiento
         protected void btn_registro_Click(object sender, EventArgs e)
         {
             Guardar();
-            string js1 = "alert('Usuario registrado corrrectamente')";
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", js1, true);
+            
             Response.Redirect("~/Login.aspx");
         }
 
@@ -41,8 +40,9 @@ namespace actividad2_FalconiHugo.Mantenimiento
                 usuregis.domicilio_usu = txt_domiciolio.Text;
                 usuregis.num_usu = Convert.ToInt32(txt_numusu.Text);
                 CN_Usuario.Registrar_usu(usuregis);
-               
 
+                string js1 = "alert('Usuario registrado corrrectamente')";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", js1, true);
 
             }
             //catch (Exception ex)
