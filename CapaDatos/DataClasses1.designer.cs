@@ -36,6 +36,15 @@ namespace CapaDatos
     partial void Insertproducto(producto instance);
     partial void Updateproducto(producto instance);
     partial void Deleteproducto(producto instance);
+    partial void Inserttbl_categoria(tbl_categoria instance);
+    partial void Updatetbl_categoria(tbl_categoria instance);
+    partial void Deletetbl_categoria(tbl_categoria instance);
+    partial void Inserttbl_metpago(tbl_metpago instance);
+    partial void Updatetbl_metpago(tbl_metpago instance);
+    partial void Deletetbl_metpago(tbl_metpago instance);
+    partial void Inserttbl_proveedores(tbl_proveedores instance);
+    partial void Updatetbl_proveedores(tbl_proveedores instance);
+    partial void Deletetbl_proveedores(tbl_proveedores instance);
     partial void Insertusuario_registro(usuario_registro instance);
     partial void Updateusuario_registro(usuario_registro instance);
     partial void Deleteusuario_registro(usuario_registro instance);
@@ -84,6 +93,30 @@ namespace CapaDatos
 			get
 			{
 				return this.GetTable<producto>();
+			}
+		}
+		
+		public System.Data.Linq.Table<tbl_categoria> tbl_categoria
+		{
+			get
+			{
+				return this.GetTable<tbl_categoria>();
+			}
+		}
+		
+		public System.Data.Linq.Table<tbl_metpago> tbl_metpago
+		{
+			get
+			{
+				return this.GetTable<tbl_metpago>();
+			}
+		}
+		
+		public System.Data.Linq.Table<tbl_proveedores> tbl_proveedores
+		{
+			get
+			{
+				return this.GetTable<tbl_proveedores>();
 			}
 		}
 		
@@ -326,7 +359,19 @@ namespace CapaDatos
 		
 		private System.Nullable<decimal> _precio_pro;
 		
+		private System.Nullable<int> _id_proveedor;
+		
+		private System.Nullable<int> _id_categoria;
+		
+		private System.Nullable<int> _id_metpago;
+		
 		private EntitySet<carrito> _carrito;
+		
+		private EntityRef<tbl_categoria> _tbl_categoria;
+		
+		private EntityRef<tbl_metpago> _tbl_metpago;
+		
+		private EntityRef<tbl_proveedores> _tbl_proveedores;
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnLoaded();
@@ -340,11 +385,20 @@ namespace CapaDatos
     partial void Ondescrip_proChanged();
     partial void Onprecio_proChanging(System.Nullable<decimal> value);
     partial void Onprecio_proChanged();
+    partial void Onid_proveedorChanging(System.Nullable<int> value);
+    partial void Onid_proveedorChanged();
+    partial void Onid_categoriaChanging(System.Nullable<int> value);
+    partial void Onid_categoriaChanged();
+    partial void Onid_metpagoChanging(System.Nullable<int> value);
+    partial void Onid_metpagoChanged();
     #endregion
 		
 		public producto()
 		{
 			this._carrito = new EntitySet<carrito>(new Action<carrito>(this.attach_carrito), new Action<carrito>(this.detach_carrito));
+			this._tbl_categoria = default(EntityRef<tbl_categoria>);
+			this._tbl_metpago = default(EntityRef<tbl_metpago>);
+			this._tbl_proveedores = default(EntityRef<tbl_proveedores>);
 			OnCreated();
 		}
 		
@@ -428,6 +482,78 @@ namespace CapaDatos
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_proveedor", DbType="Int")]
+		public System.Nullable<int> id_proveedor
+		{
+			get
+			{
+				return this._id_proveedor;
+			}
+			set
+			{
+				if ((this._id_proveedor != value))
+				{
+					if (this._tbl_proveedores.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onid_proveedorChanging(value);
+					this.SendPropertyChanging();
+					this._id_proveedor = value;
+					this.SendPropertyChanged("id_proveedor");
+					this.Onid_proveedorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_categoria", DbType="Int")]
+		public System.Nullable<int> id_categoria
+		{
+			get
+			{
+				return this._id_categoria;
+			}
+			set
+			{
+				if ((this._id_categoria != value))
+				{
+					if (this._tbl_categoria.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onid_categoriaChanging(value);
+					this.SendPropertyChanging();
+					this._id_categoria = value;
+					this.SendPropertyChanged("id_categoria");
+					this.Onid_categoriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_metpago", DbType="Int")]
+		public System.Nullable<int> id_metpago
+		{
+			get
+			{
+				return this._id_metpago;
+			}
+			set
+			{
+				if ((this._id_metpago != value))
+				{
+					if (this._tbl_metpago.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onid_metpagoChanging(value);
+					this.SendPropertyChanging();
+					this._id_metpago = value;
+					this.SendPropertyChanged("id_metpago");
+					this.Onid_metpagoChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="producto_carrito", Storage="_carrito", ThisKey="id_pro", OtherKey="id_pro")]
 		public EntitySet<carrito> carrito
 		{
@@ -438,6 +564,108 @@ namespace CapaDatos
 			set
 			{
 				this._carrito.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tbl_categoria_producto", Storage="_tbl_categoria", ThisKey="id_categoria", OtherKey="id_categoria", IsForeignKey=true)]
+		public tbl_categoria tbl_categoria
+		{
+			get
+			{
+				return this._tbl_categoria.Entity;
+			}
+			set
+			{
+				tbl_categoria previousValue = this._tbl_categoria.Entity;
+				if (((previousValue != value) 
+							|| (this._tbl_categoria.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._tbl_categoria.Entity = null;
+						previousValue.producto.Remove(this);
+					}
+					this._tbl_categoria.Entity = value;
+					if ((value != null))
+					{
+						value.producto.Add(this);
+						this._id_categoria = value.id_categoria;
+					}
+					else
+					{
+						this._id_categoria = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("tbl_categoria");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tbl_metpago_producto", Storage="_tbl_metpago", ThisKey="id_metpago", OtherKey="id_metpago", IsForeignKey=true)]
+		public tbl_metpago tbl_metpago
+		{
+			get
+			{
+				return this._tbl_metpago.Entity;
+			}
+			set
+			{
+				tbl_metpago previousValue = this._tbl_metpago.Entity;
+				if (((previousValue != value) 
+							|| (this._tbl_metpago.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._tbl_metpago.Entity = null;
+						previousValue.producto.Remove(this);
+					}
+					this._tbl_metpago.Entity = value;
+					if ((value != null))
+					{
+						value.producto.Add(this);
+						this._id_metpago = value.id_metpago;
+					}
+					else
+					{
+						this._id_metpago = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("tbl_metpago");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tbl_proveedores_producto", Storage="_tbl_proveedores", ThisKey="id_proveedor", OtherKey="id_proveedor", IsForeignKey=true)]
+		public tbl_proveedores tbl_proveedores
+		{
+			get
+			{
+				return this._tbl_proveedores.Entity;
+			}
+			set
+			{
+				tbl_proveedores previousValue = this._tbl_proveedores.Entity;
+				if (((previousValue != value) 
+							|| (this._tbl_proveedores.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._tbl_proveedores.Entity = null;
+						previousValue.producto.Remove(this);
+					}
+					this._tbl_proveedores.Entity = value;
+					if ((value != null))
+					{
+						value.producto.Add(this);
+						this._id_proveedor = value.id_proveedor;
+					}
+					else
+					{
+						this._id_proveedor = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("tbl_proveedores");
+				}
 			}
 		}
 		
@@ -471,6 +699,396 @@ namespace CapaDatos
 		{
 			this.SendPropertyChanging();
 			entity.producto = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_categoria")]
+	public partial class tbl_categoria : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id_categoria;
+		
+		private string _categoria;
+		
+		private EntitySet<producto> _producto;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onid_categoriaChanging(int value);
+    partial void Onid_categoriaChanged();
+    partial void OncategoriaChanging(string value);
+    partial void OncategoriaChanged();
+    #endregion
+		
+		public tbl_categoria()
+		{
+			this._producto = new EntitySet<producto>(new Action<producto>(this.attach_producto), new Action<producto>(this.detach_producto));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_categoria", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id_categoria
+		{
+			get
+			{
+				return this._id_categoria;
+			}
+			set
+			{
+				if ((this._id_categoria != value))
+				{
+					this.Onid_categoriaChanging(value);
+					this.SendPropertyChanging();
+					this._id_categoria = value;
+					this.SendPropertyChanged("id_categoria");
+					this.Onid_categoriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_categoria", DbType="VarChar(100)")]
+		public string categoria
+		{
+			get
+			{
+				return this._categoria;
+			}
+			set
+			{
+				if ((this._categoria != value))
+				{
+					this.OncategoriaChanging(value);
+					this.SendPropertyChanging();
+					this._categoria = value;
+					this.SendPropertyChanged("categoria");
+					this.OncategoriaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tbl_categoria_producto", Storage="_producto", ThisKey="id_categoria", OtherKey="id_categoria")]
+		public EntitySet<producto> producto
+		{
+			get
+			{
+				return this._producto;
+			}
+			set
+			{
+				this._producto.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_producto(producto entity)
+		{
+			this.SendPropertyChanging();
+			entity.tbl_categoria = this;
+		}
+		
+		private void detach_producto(producto entity)
+		{
+			this.SendPropertyChanging();
+			entity.tbl_categoria = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_metpago")]
+	public partial class tbl_metpago : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id_metpago;
+		
+		private string _metodo;
+		
+		private EntitySet<producto> _producto;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onid_metpagoChanging(int value);
+    partial void Onid_metpagoChanged();
+    partial void OnmetodoChanging(string value);
+    partial void OnmetodoChanged();
+    #endregion
+		
+		public tbl_metpago()
+		{
+			this._producto = new EntitySet<producto>(new Action<producto>(this.attach_producto), new Action<producto>(this.detach_producto));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_metpago", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id_metpago
+		{
+			get
+			{
+				return this._id_metpago;
+			}
+			set
+			{
+				if ((this._id_metpago != value))
+				{
+					this.Onid_metpagoChanging(value);
+					this.SendPropertyChanging();
+					this._id_metpago = value;
+					this.SendPropertyChanged("id_metpago");
+					this.Onid_metpagoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_metodo", DbType="VarChar(100)")]
+		public string metodo
+		{
+			get
+			{
+				return this._metodo;
+			}
+			set
+			{
+				if ((this._metodo != value))
+				{
+					this.OnmetodoChanging(value);
+					this.SendPropertyChanging();
+					this._metodo = value;
+					this.SendPropertyChanged("metodo");
+					this.OnmetodoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tbl_metpago_producto", Storage="_producto", ThisKey="id_metpago", OtherKey="id_metpago")]
+		public EntitySet<producto> producto
+		{
+			get
+			{
+				return this._producto;
+			}
+			set
+			{
+				this._producto.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_producto(producto entity)
+		{
+			this.SendPropertyChanging();
+			entity.tbl_metpago = this;
+		}
+		
+		private void detach_producto(producto entity)
+		{
+			this.SendPropertyChanging();
+			entity.tbl_metpago = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_proveedores")]
+	public partial class tbl_proveedores : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id_proveedor;
+		
+		private string _nombre_proveedor;
+		
+		private string _direccion_proveedor;
+		
+		private string _telefono_proveedor;
+		
+		private EntitySet<producto> _producto;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onid_proveedorChanging(int value);
+    partial void Onid_proveedorChanged();
+    partial void Onnombre_proveedorChanging(string value);
+    partial void Onnombre_proveedorChanged();
+    partial void Ondireccion_proveedorChanging(string value);
+    partial void Ondireccion_proveedorChanged();
+    partial void Ontelefono_proveedorChanging(string value);
+    partial void Ontelefono_proveedorChanged();
+    #endregion
+		
+		public tbl_proveedores()
+		{
+			this._producto = new EntitySet<producto>(new Action<producto>(this.attach_producto), new Action<producto>(this.detach_producto));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_proveedor", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id_proveedor
+		{
+			get
+			{
+				return this._id_proveedor;
+			}
+			set
+			{
+				if ((this._id_proveedor != value))
+				{
+					this.Onid_proveedorChanging(value);
+					this.SendPropertyChanging();
+					this._id_proveedor = value;
+					this.SendPropertyChanged("id_proveedor");
+					this.Onid_proveedorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre_proveedor", DbType="VarChar(100)")]
+		public string nombre_proveedor
+		{
+			get
+			{
+				return this._nombre_proveedor;
+			}
+			set
+			{
+				if ((this._nombre_proveedor != value))
+				{
+					this.Onnombre_proveedorChanging(value);
+					this.SendPropertyChanging();
+					this._nombre_proveedor = value;
+					this.SendPropertyChanged("nombre_proveedor");
+					this.Onnombre_proveedorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_direccion_proveedor", DbType="VarChar(100)")]
+		public string direccion_proveedor
+		{
+			get
+			{
+				return this._direccion_proveedor;
+			}
+			set
+			{
+				if ((this._direccion_proveedor != value))
+				{
+					this.Ondireccion_proveedorChanging(value);
+					this.SendPropertyChanging();
+					this._direccion_proveedor = value;
+					this.SendPropertyChanged("direccion_proveedor");
+					this.Ondireccion_proveedorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_telefono_proveedor", DbType="VarChar(100)")]
+		public string telefono_proveedor
+		{
+			get
+			{
+				return this._telefono_proveedor;
+			}
+			set
+			{
+				if ((this._telefono_proveedor != value))
+				{
+					this.Ontelefono_proveedorChanging(value);
+					this.SendPropertyChanging();
+					this._telefono_proveedor = value;
+					this.SendPropertyChanged("telefono_proveedor");
+					this.Ontelefono_proveedorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tbl_proveedores_producto", Storage="_producto", ThisKey="id_proveedor", OtherKey="id_proveedor")]
+		public EntitySet<producto> producto
+		{
+			get
+			{
+				return this._producto;
+			}
+			set
+			{
+				this._producto.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_producto(producto entity)
+		{
+			this.SendPropertyChanging();
+			entity.tbl_proveedores = this;
+		}
+		
+		private void detach_producto(producto entity)
+		{
+			this.SendPropertyChanging();
+			entity.tbl_proveedores = null;
 		}
 	}
 	

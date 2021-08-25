@@ -16,7 +16,36 @@
       <Column Name="nombre_pro" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="descrip_pro" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
       <Column Name="precio_pro" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="id_proveedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_categoria" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_metpago" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="producto_carrito" Member="carrito" ThisKey="id_pro" OtherKey="id_pro" Type="carrito" />
+      <Association Name="tbl_categoria_producto" Member="tbl_categoria" ThisKey="id_categoria" OtherKey="id_categoria" Type="tbl_categoria" IsForeignKey="true" />
+      <Association Name="tbl_metpago_producto" Member="tbl_metpago" ThisKey="id_metpago" OtherKey="id_metpago" Type="tbl_metpago" IsForeignKey="true" />
+      <Association Name="tbl_proveedores_producto" Member="tbl_proveedores" ThisKey="id_proveedor" OtherKey="id_proveedor" Type="tbl_proveedores" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_categoria" Member="tbl_categoria">
+    <Type Name="tbl_categoria">
+      <Column Name="id_categoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="categoria" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="tbl_categoria_producto" Member="producto" ThisKey="id_categoria" OtherKey="id_categoria" Type="producto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_metpago" Member="tbl_metpago">
+    <Type Name="tbl_metpago">
+      <Column Name="id_metpago" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="metodo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="tbl_metpago_producto" Member="producto" ThisKey="id_metpago" OtherKey="id_metpago" Type="producto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_proveedores" Member="tbl_proveedores">
+    <Type Name="tbl_proveedores">
+      <Column Name="id_proveedor" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_proveedor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="direccion_proveedor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="telefono_proveedor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="tbl_proveedores_producto" Member="producto" ThisKey="id_proveedor" OtherKey="id_proveedor" Type="producto" />
     </Type>
   </Table>
   <Table Name="dbo.usuario_registro" Member="usuario_registro">
