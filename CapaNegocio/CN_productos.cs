@@ -12,7 +12,7 @@ namespace CapaNegocio
     {
         public static List<producto> obtener_pro()
         {
-            var listap = dc.tbl_producto.Where(pro => pro.pro_estado == 'A');
+            var listap = dc.producto.Where(pro => pro.estado == 'D');
             return listap.ToList();
         }
     }

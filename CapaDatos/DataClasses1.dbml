@@ -15,6 +15,7 @@
       <Column Name="id_pro" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="nombre_pro" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="descrip_pro" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="estado_pro" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
       <Column Name="precio_pro" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
       <Column Name="id_proveedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="id_categoria" Type="System.Int32" DbType="Int" CanBeNull="true" />

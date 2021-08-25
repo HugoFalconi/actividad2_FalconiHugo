@@ -357,6 +357,8 @@ namespace CapaDatos
 		
 		private string _descrip_pro;
 		
+		private System.Nullable<char> _estado_pro;
+		
 		private System.Nullable<decimal> _precio_pro;
 		
 		private System.Nullable<int> _id_proveedor;
@@ -383,6 +385,8 @@ namespace CapaDatos
     partial void Onnombre_proChanged();
     partial void Ondescrip_proChanging(string value);
     partial void Ondescrip_proChanged();
+    partial void Onestado_proChanging(System.Nullable<char> value);
+    partial void Onestado_proChanged();
     partial void Onprecio_proChanging(System.Nullable<decimal> value);
     partial void Onprecio_proChanged();
     partial void Onid_proveedorChanging(System.Nullable<int> value);
@@ -458,6 +462,26 @@ namespace CapaDatos
 					this._descrip_pro = value;
 					this.SendPropertyChanged("descrip_pro");
 					this.Ondescrip_proChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estado_pro", DbType="Char(1)")]
+		public System.Nullable<char> estado_pro
+		{
+			get
+			{
+				return this._estado_pro;
+			}
+			set
+			{
+				if ((this._estado_pro != value))
+				{
+					this.Onestado_proChanging(value);
+					this.SendPropertyChanging();
+					this._estado_pro = value;
+					this.SendPropertyChanged("estado_pro");
+					this.Onestado_proChanged();
 				}
 			}
 		}
