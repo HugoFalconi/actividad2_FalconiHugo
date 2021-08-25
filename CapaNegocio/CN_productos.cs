@@ -7,12 +7,13 @@ using CapaDatos;
 
 namespace CapaNegocio
 {
-    public static DataClasses1DataContext dc = new DataClasses1DataContext();
+    
     public class CN_productos
     {
+        public static DataClasses1DataContext dc = new DataClasses1DataContext();
         public static List<producto> obtener_pro()
         {
-            var listap = dc.producto.Where(pro => pro.estado == 'D');
+            var listap = dc.producto.Where(pro => pro.estado_pro == 'D');
             return listap.ToList();
         }
     }
